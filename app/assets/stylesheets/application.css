@@ -1,0 +1,184 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body
+{
+margin: 0;
+padding:30;
+background-image:url(mitclick1.jpg);
+width: 1300px;
+height: 657px;
+background-size:cover;
+}
+
+#scr
+{
+width: 400px;
+height:380px;
+background: rgba(0,0,0,0.3);
+color: #ffffff;
+float:right;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#l1
+{
+font-size:25px;
+color:cream;
+cursor:pointer;
+}
+
+#l2
+{
+text-align:center;
+font-size:25px;
+color:cream;
+cursor:pointer;
+}
+
+#i1
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}
+
+ :placeholder {
+     color: white;
+}
+
+input:focus{
+outline:none;
+border-bottom:2px solid rgb(91,243,131);
+font-size:17px;
+font-weight:bold;
+}
+
+#i2
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}
+
+#i3
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}
+
+#i4
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}
+
+#i5
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}
+
+#i6
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}                                                                                                       
+
+
+
+#ck
+{
+color:#ffffff;
+font-size:18px;
+cursor:pointer;
+}
+
+#b1
+{
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 300px;
+    background: green;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#b2
+{
+border:none;
+border-radius:15px;
+height:40px;
+width:300px;
+background:red;
+color:#ffffff;
+font-size:25px;
+cursor:pointer;
+}
+
+#f2
+{
+display:none;
+}
+

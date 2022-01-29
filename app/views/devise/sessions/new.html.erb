@@ -1,0 +1,39 @@
+
+<br><br>
+<center>
+<br><br><br><br><br><br><br>
+<div id="scr">
+<body>
+   
+    <nav>
+    
+    <%= link_to Dashboard, root_path %>
+    <% if user_signed_in? %>
+        <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+    <% end %>
+</nav>
+  <%= yield %></body>
+  
+
+<br>
+<%= link_to new_user_registration_path do %>
+<label id=l1 > <b><u>SIGN IN</u></label> &emsp;&emsp;
+<%end%> 
+<%= link_to new_user_session_path do %>
+<label id=l2><u> LOG IN </u></b></label>
+<%end%>
+<br><br><br>
+
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+<input type="text"  placeholder="Email ID" name="user[email]" >
+<br><br>
+
+
+<input type="password"  placeholder="Password" name="user[password]" >
+
+<br><br>
+<button id="b1" type="submit">Log In </button>
+
+<%end%>

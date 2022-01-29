@@ -1,0 +1,272 @@
+
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+<script>
+
+$(document).ready(function()
+{
+
+$("#l1").click(function()
+{
+$("#f1").show();
+$("#f2").hide();
+});
+
+$("#l2").click(function()
+{
+$("#f2").show();
+$("#f1").hide();
+});
+
+$("#b1").blur(function()
+{
+validate();
+});
+
+function validate()
+{
+let x=document.getElementById("i3").value;
+let y=document.getElementById("i4").value;
+alert ("password entered is"+x+"and the confirm password is"+y);
+if(x!=y)
+{
+alert("Your entered password and confirm password are not same .");
+}
+else
+alert("Welcome");
+}
+
+});
+
+</script>
+
+<style>
+
+body
+{
+margin:0;
+padding:30;
+background-image:url(mitclick1.jpg);
+background-size:cover;
+}
+
+#scr
+{
+width: 400px;
+height:380px;
+background: rgba(0,0,0,0.3);
+color: #ffffff;
+float:right;
+}
+
+#l1
+{
+font-size:25px;
+color:cream;
+cursor:pointer;
+}
+
+#l2
+{
+text-align:center;
+font-size:25px;
+color:cream;
+cursor:pointer;
+}
+
+#i1
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}
+
+  :placeholder {
+     color: white;
+}
+
+input:focus{
+outline:none;
+border-bottom:2px solid rgb(91,243,131);
+font-size:17px;
+font-weight:bold;
+}
+
+#i2
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}
+
+#i3
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}
+
+#i4
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}
+
+#i5
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}
+
+#i6
+{
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+border-bottom-style:solid;
+border-color:white;
+height:20;
+width:300;
+color:white;
+padding-left: 15px;
+background: rgba(0,0,0,0);
+}                                                                                                       
+
+
+
+#ck
+{
+color:#ffffff;
+font-size:18px;
+cursor:pointer;
+}
+
+#b1
+{
+border:none;
+border-radius:25px;
+height:40px;
+width:300px;
+background:green;
+color:#ffffff;
+font-size:25px;
+cursor:pointer;
+}
+
+#b2
+{
+border:none;
+border-radius:25px;
+height:40px;
+width:300px;
+background:green;
+color:#ffffff;
+font-size:25px;
+cursor:pointer;
+}
+
+#f2
+{
+display:none;
+}
+</style>
+</head>
+
+<body>
+<br><br>
+<center>
+<br><br><br><br><br><br><br>
+<div id="scr">
+<br><br>
+<label id=l1 > <b><u>SIGN UP</u></label> &emsp;&emsp; <label id=l2><u> LOG IN </u></b></label>
+<br><br><br>
+
+<form id=f1>
+<form action="#">
+
+<input type=text  id="i1"  placeholder="User Name" sixe=30 >
+<br><br>
+
+<input type=email  id="i2"  placeholder="Email ID" sixe=20 data-toggle="tooltip">
+<br><br>
+
+<input type=password  id="i3"  placeholder="Password" sixe=20 data-toggle="tooltip">
+<br><br>
+
+<input type=email  id="i4"  placeholder="Confirm Password" sixe=20 data-toggle="tooltip">
+<br><br><br>
+
+<input type=checkbox name=ck value=ck1 id="ck"> <label id="ck">I agree with terms & conditions</label>
+ <br>
+<br><br>
+<button id=b1> Sign In</button>
+</form>
+
+<form id=f2>
+
+<input type=text sixe=20 id="i5"  placeholder="Email ID" data-toggle="tooltip" required>
+<br><br>
+<input type=password  id="i6"  placeholder="Password" sixe=20 data-toggle="tooltip">
+<br><br><br><br>
+<input type=checkbox name=ck value=ck1 id="ck"> <label id="ck">Keep me signed in on this device</label>
+ <br><br> 
+
+<button id=b2> Login </button>
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
